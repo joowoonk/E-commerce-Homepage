@@ -3,16 +3,9 @@ import React, { Component } from 'react';
 import { Switch, Route, Link} from 'react-router-dom'
 import './App.css';
 import HomePage from './pages/homepage/homepage.component'
+import ShopPage from './pages/shop/shop.component'
 
-const HatsPage = (props) => {
-  console.log(props)
-  return(
-    <div>
-      <h1>HATS PAGE</h1>
-    </div>
 
-  )
-}
 
   
 
@@ -25,8 +18,8 @@ class App extends Component {
           <Route exact path='/' >
             <HomePage /> 
           </Route>
-          <Route path='/hats'  >
-            <HatsPage />
+          <Route path='/shop'  >
+            <ShopPage />
           </Route>
 
         </Switch>
