@@ -8,7 +8,7 @@ import Directory from "../../components/directory/directory.component"
 
 // import MenuItem from "./pages/homepage/homepage.component"
 
-const HomePage = () => {
+const HomePage = ({ history }) => {
     return (
         <div className = 'homepage'> 
        

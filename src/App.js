@@ -8,8 +8,6 @@ const HatsPage = (props) => {
   console.log(props)
   return(
     <div>
-      <Link to='/'> Homapge</Link>
-      <button onClick ={()=> props.history.push('/')}>Take me homepage</button>
       <h1>HATS PAGE</h1>
     </div>
 
@@ -24,8 +22,13 @@ class App extends Component {
     return(
       <div className='App'>
         <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/hats' component={HatsPage} />
+          <Route exact path='/' >
+            <HomePage /> 
+          </Route>
+          <Route path='/hats'  >
+            <HatsPage />
+          </Route>
+
         </Switch>
       </div>
     )
